@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="50dp"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    android:background="#3F3F40"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <include
+            layout="@layout/con_dlv_notes"
+            android:id="@+id/dlv_notesOld"
+            />
+
+        <ProgressBar
+            android:id="@+id/pb_project_view_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/dlv_notesOld"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_circular"
+            android:secondaryProgress="100"
+            />
+
+        <TextView
+            android:id="@+id/tv_project_view_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_project_view_progressbar"
+            android:layout_alignParentStart="true"
+            android:paddingTop="5dp"
+            android:textSize="9sp"
+            android:textColor="#B8B8A5" />
+
+    </RelativeLayout>
+</ScrollView>

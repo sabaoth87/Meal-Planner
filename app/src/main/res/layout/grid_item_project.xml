@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="120dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/gitem_projectABL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="10sp"
+        android:hint="ABL-xxxxxx"
+        />
+    <TextView
+        android:id="@+id/gitem_projectShort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="10sp"
+        android:hint="Short Title"/>
+    <TextView
+        android:id="@+id/gitem_projectProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:hint="87%"/>
+
+
+</LinearLayout>

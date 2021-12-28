@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="string_null">    ¯\_(ツ)_/¯</string>
+
+    <string name="app_name">Project:Ions</string>
+
+    <string name="et_entry_null_body">This entry has been found to be null.</string>
+
+    <string name="tv_mm_00">Main Menu Text View</string>
+    <string name="tvMain_toolDeleted">Tool Deleted!</string>
+    <string name="tvMain_noSuchEntry">xx No Entry Exists xx</string>
+
+    <string name="desc_add_project">Add This!</string>
+
+    <string name="prefs_dev_mode_key">dev_mode</string>
+    <string name="prefs_dev_mode_message">Check to enable developer mode.</string>
+    <string name="prefs_dev_mode_summary">Turn all options and messages on.</string>
+    <string name="prefs_dev_mode_dialog_title">Turn on Dev Mode</string>
+    <string name="prefs_dev_mode_title">Developer Mode</string>
+    <string name="prefs_tilt_scroll_key">tilt_scroll</string>
+    <string name="prefs_tilt_scroll_message">Check to enable tilt scrolling.</string>
+    <string name="prefs_tilt_scroll_summary">Enables tilt scrolling option.</string>
+    <string name="prefs_tilt_scroll_dialog_title">Turn on Scroll Tilt</string>
+    <string name="prefs_tilt_scroll_title">Scroll Tilt</string>
+    <string name="prefs_tilt_scroll_up_key">tilt_scroll_up</string>
+    <string name="prefs_tilt_scroll_up_message">Tilt scrolling (down) variable.</string>
+    <string name="prefs_tilt_scroll_up_summary">Enter a value to bind the tilt scroll (UP) to</string>
+    <string name="prefs_tilt_scroll_up_dialog_title">Scrolling Ceiling</string>
+    <string name="prefs_tilt_scroll_up_title">Tilt Up Value</string>
+    <string name="prefs_tilt_scroll_down_key">tilt_scroll_down</string>
+    <string name="prefs_tilt_scroll_down_message">Tilt scrolling (down) variable.</string>
+    <string name="prefs_tilt_scroll_down_summary">Enter a value to bind the tilt scroll (DOWN) to</string>
+    <string name="prefs_tilt_scroll_down_dialog_title">Scrolling floor</string>
+    <string name="prefs_tilt_scroll_down_title">Tilt Down Value</string>
+    <string name="pref_default_time_from_now_key">time_from_now_default</string>
+    <string name="pref_default_time_from_now_title">Default Reminder Time</string>
+    <string name="pref_default_time_from_now_summary">Sets the default time for a reminder.</string>
+    <string name="pref_default_time_from_now_message">The default time from now (in minutes) that a new reminder should be set to.</string>
+    <string name="pref_default_time_from_now_dialog_title">Time From Now</string>
+    <string name="pref_category_datetime_title">Date Time Defaults</string>
+    <string name="pref_category_datetime_key">date_time_default_category</string>
+    <string name="pref_category_task_defaults_title">Task Title Default</string>
+    <string name="pref_category_task_defaults_key">task_default_category</string>
+    <string name="pref_task_title_message">The default title for a reminder</string>
+    <string name="pref_task_title_title">Default Reminder Title</string>
+    <string name="pref_task_title_key">default_reminder_title</string>
+    <string name="pref_task_title_summary">Default title for reminders.</string>
+    <string name="pref_task_title_dialog_title">Default Reminder Title</string>
+
+    <string name="menu_opt_1">Reminder</string>
+    <string name="menu_opt_2">Search</string>
+    <string name="menu_opt_3">Search</string>
+    <string name="menu_opt_4">Search</string>
+    <string name="menu_opt_5">Search</string>
+    <string name="menu_opt_6">Search</string>
+    <string name="menu_action_settings">SETTINGS</string>
+    <string name="menu_workbench_list">Show All</string>
+    <string name="menu_workbench_db">Database</string>
+    <string name="menu_workbench_add_tool">+Tool</string>
+    <string name="menu_workbench_search_tool">Search</string>
+    <string name="menu_issues_add">New Issue</string>
+    <string name="menu_issues_settings">Settings</string>
+    <string name="menu_issues_list">View All</string>
+
+    <string name="menu_lp_item_search">Search Item</string>
+    <string name="menu_lp_item_delete">Delete Item</string>
+    <string name="menu_lp_reminder_delete">Delete Reminder</string>
+    <string name="menu_lp_tool_delete">Delete Tool</string>
+    <string name="menu_lp_issue_delete">Delete Issue</string>
+    <string name="menu_lp_issue_edit">Edit Entry</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="PHA_VoiceRecord">RECORD</string>
+    <string name="PHA_VoiceTTS">TTS</string>
+    <string name="PHA_Test_Update">UPDATE</string>
+    <string name="PHA_Test_Show">VALUES</string>
+    <string name="PHA_Test_Zeros">0.0</string>
+    <string name="PHA_Test_Values">Determining variables\.\.\.</string>
+    <string name="PHA_MM_Title">MM TV</string>
+    <string name="PHA_TestingTitle"> ** TESTS  ** </string>
+    <string name="PHA_SudokuTitle">PHA:LANX(Sudoku)</string>
+    <string name="PHA_CalcTitle">PHA:LANX(Calc)</string>
+    <string name="PHA_SearchTitle">PHA:LANX(Search)</string>
+    <string name="PHA_ResultTitle">PHA:LANX(Search:Results)</string>
+    <string name="PHA_MemoTitle">PHA:LANX(Memo)</string>
+    <string name="PHA_Title">PHA:LANX</string>
+
+    <string name="empty">Empty</string>
+    <string name="notifyNewTaskMessage">You Have a New Reminder</string>
+    <string name="notifyNewTaskTitle">Reminders</string>
+    <string name="saveConfirm">SAAAVED!!</string>
+
+    <string name="pha_search_hint">Enter your search\.\.\.</string>
+    <string name="pha_search_txt">Please enter a search and we will begin</string>
+    <string name="searchIntent">searchEntry</string>
+    <string name="pha_search_btn">SEARCH</string>
+
+    <string name="remsTime">Time</string>
+    <string name="remsDate">Date</string>
+    <string name="remsConfirm">Confirm</string>
+    <string name="remsBody">Body</string>
+    <string name="remsTitle">Title</string>
+    <string name="reminderHint">Type reminder here.</string>
+    <string name="reminderBtnTxt">ADD</string>
+    <string name="memoAdd">ADD</string>
+    <string name="memoClear">CLEAR</string>
+    <string name="memoShow">SHOW</string>
+    <string name="dbEntryName">You\.\.\.</string>
+    <string name="dbEntryTitle">Title\.\.\.</string>
+    <string name="dbEntryComment">Comment\.\.\.</string>
+    <string name="dbEntryMemo">Memo\.\.\.</string>
+    <string name="dbEntryTags">TAGS\,</string>
+    <string name="phaRemindersNoRems">Empty</string>
+    <string name="memoEntryBttnTxt">Save</string>
+    <string name="memoShowBttnTxt">Show</string>
+    <string name="dbSpinnerPrompt">Category</string>
+    <string name="timeSeperator"> / </string>
+
+    <string name="converterPrompt">Default</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Project Planning" />
+
+
+        <GridView
+            android:id="@+id/grid_project_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="24dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="spacingWidthUniform"
+            />
+
+        <!-- Second Bar-->
+        <!-- This should be considered a testing bar for now
+        all options that are used here should be a menu or context
+        option when completed -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_projects_add"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="ADD" />
+
+            <Button
+                android:id="@+id/btn_projects_clear"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="CLEAR" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/recyclerview_item" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/desc_add_project"
+            android:src="@drawable/ic_baseline_add_circle_outline_24"/>
+
+
+        <ExpandableListView
+            android:id="@+id/elv_projects"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+    </LinearLayout>
+</ScrollView>

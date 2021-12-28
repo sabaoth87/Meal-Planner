@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="horizontal"
+    android:background="@color/puzzle_background">
+
+    <TextView
+        android:id="@+id/lgitem_grocery_name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:textColor="@color/palegreen"
+        android:text="test"
+        />
+
+    <TextView
+        android:id="@+id/lgitem_grocery_amount"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/palegreen"
+        android:text="Ingredient"
+        />
+
+    <TextView
+        android:id="@+id/lgitem_grocery_location"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/palegreen"
+        android:text="Recipe"
+        />
+
+    <ImageView
+        android:id="@+id/lgitem_remove"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"/>
+
+</LinearLayout>

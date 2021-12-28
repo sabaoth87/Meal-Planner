@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    tools:context=".MenuMeal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_mealmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="THIS MEAL" />
+
+
+            <GridView
+                android:id="@+id/grid_meal"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:columnWidth="150dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="24dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="16dp"
+                android:contentDescription="@string/desc_add_project"
+                android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <TextView
+            android:id="@+id/tv_meal_greens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GREENS" />
+
+        <TextView
+            android:id="@+id/tv_meal_grains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GRAINS" />
+
+        <TextView
+            android:id="@+id/tv_meal_proteins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PROTEINS" />
+
+        <TextView
+            android:id="@+id/tv_meal_drinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DRINKS" />
+
+    </LinearLayout>
+</ScrollView>

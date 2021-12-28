@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.tnk.mealpleanner"
+        minSdkVersion 22
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        setProperty("archivesBaseName", "Meal_Planner-$versionName")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            applicationVariants.all { variant ->
+//                variant.outputs.all {
+//                    outputFileName = "${applicationName}_${variant.buildType.name}_${defaultConfig.versionName}.apk"
+//        }
+//            }
+        }
+    }
+
+
+    dependencies {
+        def room_version = "2.4.0"
+        def lifecycle_version = "2.4.0"
+        def arch_version = "2.1.0"
+        def kotlin_stdlibVersion = "0.0.1"
+
+        //kapt("androidx.room:room-compiler:$room_version")               // To use Kotlin annotation processing tool (kapt)
+        //ksp("androidx.room:room-compiler:$room_version")                // To use Kotlin Symbolic Processing (KSP)
+        implementation("androidx.room:room-ktx:$room_version")          // optional - Kotlin Extensions and Coroutines support for Room
+        implementation("androidx.room:room-rxjava2:$room_version")       // optional - RxJava2 support for Room
+        implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
+        implementation("io.reactivex.rxjava2:rxjava:2.2.9")
+        //implementation("androidx.room:room-rxjava3:$room_version")       // optional - RxJava3 support for Room
+        //implementation("androidx.room:room-guava:$room_version")         // optional - Guava support for Room, including Optional and ListenableFuture
+        testImplementation("androidx.room:room-testing:$room_version")  // optional - Test helpers
+        implementation("androidx.room:room-paging:2.4.0")        // opt - Paging 3
+        implementation "androidx.room:room-runtime:$room_version"
+        annotationProcessor "androidx.room:room-compiler:$room_version"
+        implementation "androidx.activity:activity-ktx:1.4.0"
+        implementation "androidx.fragment:fragment-ktx:1.4.0"
+        implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0-RC'
+        implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.0"
+        // ViewModel
+        implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+        // ViewModel utilities for Compose
+        // implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
+        // LiveData
+        implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+        // Lifecycles only (without ViewModel or LiveData)
+        implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+        // Saved state module for ViewModel
+        implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
+        // alternately - if using Java8, use the following instead of lifecycle-compiler
+        // implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
+        // optional - helpers for implementing LifecycleOwner in a Service
+        implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
+
+        // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+        implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
+
+        // optional - ReactiveStreams support for LiveData
+        implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version")
+
+        // optional - Test helpers for LiveData
+        testImplementation("androidx.arch.core:core-testing:$arch_version")
+
+        //
+        implementation("androidx.recyclerview:recyclerview:1.2.1")
+        // For control over item selection of both touch and mouse driven selection
+        implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
+        //implementation fileTree(dir: 'libs', include: ['*.jar'])
+        //implementation 'com.android.support:appcompat-v7:28.0.0'
+        implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+        implementation "androidx.core:core-ktx:1.7.0"
+        testImplementation 'junit:junit:4.12'
+        //androidTestImplementation 'com.android.support.test:runner:1.0.2'
+        androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+        //fab
+        implementation 'com.google.android.material:material:1.4.0'
+
+        // apply plugin: 'kotlin-android-extensions'
+        apply plugin: 'kotlin-kapt'
+        // Extensions = ViewModel + LiveData
+        // implementation "android.arch.lifecycle:extensions:1.1.1"
+        // kapt "android.arch.lifecycle:compiler:1.1.1"
+        // Room
+        implementation "android.arch.persistence.room:runtime:1.1.1"
+        kapt "android.arch.persistence.room:compiler:1.1.1"
+        kapt "androidx.room:room-compiler:2.4.0"
+
+    }
+}
+repositories {
+    //mavenCentral()
+}
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}

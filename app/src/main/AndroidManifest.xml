@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tnk.project_ions">
+
+    <application
+        android:name=".db.MealsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <activity android:name=".MenuWeek"
+            android:label="Projects :: Main"
+            android:exported="true"
+            android:screenOrientation="sensorLandscape"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Meal_View"
+            android:screenOrientation="sensorLandscape"
+            android:label="Prj :: View" />
+
+        <activity android:name=".PrjAddNote"
+            android:screenOrientation="sensorLandscape"
+            android:label="Prj :: Add" />
+
+        <activity android:name=".MenuDay"
+            android:screenOrientation="sensorLandscape"
+            android:label="MAKE TODAY WONDERFUL" />
+
+        <activity android:name=".MenuMeal"
+            android:screenOrientation="sensorLandscape"
+            android:label="MAKE TODAY WONDERFUL" />
+
+        <activity android:name=".PrjAddNew"
+            android:screenOrientation="sensorLandscape"
+            android:label="Prj :: New" />
+
+        <activity android:name=".PromptIngredAdd"
+            android:screenOrientation="sensorLandscape"
+            android:label="Ingredients" />
+
+        <activity android:name=".db.MealsApplication"
+            android:screenOrientation="sensorLandscape"
+            android:label="Prj :: PrjDb" />
+
+    </application>
+
+</manifest>

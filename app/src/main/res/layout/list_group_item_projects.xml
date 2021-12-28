@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="horizontal"
+    android:background="@color/puzzle_background">
+
+    <TextView
+        android:id="@+id/lgitem_projects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="@color/palegreen"
+        android:text="test"
+        />
+
+    <TextView
+        android:id="@+id/lgitem_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="@color/palegreen"
+        android:text="Ingredient"
+        />
+
+    <TextView
+        android:id="@+id/lgitem_associate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="45dp"
+        android:textColor="@color/palegreen"
+        android:text="Recipe"
+        />
+
+    <ImageView
+        android:id="@+id/lgitem_remove"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"/>
+
+</LinearLayout>

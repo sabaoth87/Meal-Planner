@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dip"
+    android:paddingTop="50dp"
+    android:paddingRight="30dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="1dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="1dp">
+
+        <TextView
+            android:id="@+id/meal_card_lbl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:text=" MEAL INFORMATION "
+            android:textSize="11sp" />
+
+        <!-- START  :: Meal Number Info -->
+        <LinearLayout
+            android:id="@+id/meal_card_ll_num"
+            android:layout_below="@id/meal_card_lbl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+            <TextView
+                android:id="@+id/meal_card_lbl_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text=" Meal #: "
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/meal_card_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text=" ## "
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/meal_card_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_card_ll_num"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text=" MEAL NAME "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/meal_card_lbl_parts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_card_tv_name"
+            android:layout_alignParentStart="true"
+            android:paddingTop="15dp"
+            android:text=" This Meal Contains : "
+            android:textSize="11sp" />
+
+        <ExpandableListView
+            android:id="@+id/meal_card_elv_parts"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_below="@id/meal_card_lbl_parts"
+            android:textSize="11sp" />
+
+        <!-- END    :: Info Bar -->
+
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@id/meal_card_elv_parts"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="?android:attr/listDivider" />
+
+        <include
+            android:id="@+id/test_notes"
+            layout="@layout/con_dlv_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider" />
+
+
+
+    </RelativeLayout>
+</ScrollView>
